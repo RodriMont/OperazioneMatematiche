@@ -8,12 +8,12 @@ public class OperazioneMatematiche {
 
         System.out.println("Inserisce 2 numeri: ");
 
-        System.out.println("Numero a: ");
+        
         int a = scanner.nextInt();
-        System.out.println("Operazione a: ");
+        scanner.nextLine();
         String operazione = scanner.nextLine();
-        System.out.println("Numero b: ");
         int b = scanner.nextInt();
+        scanner.nextLine();
 
 
         if(operazione.equals("+")){
@@ -26,7 +26,7 @@ public class OperazioneMatematiche {
         }else if(operazione.equals("%")){
             int risultato = modulo(a, b);
             System.out.println( a + " % " + b + " = " + risultato);
-        }else if(operazione.equals("%")){
+        }else if(operazione.equals("*")){
             int risultato = prodotto(a, b);
             System.out.println( a + " * " + b + " = " + risultato);
         }else if(operazione.equals("/")){
