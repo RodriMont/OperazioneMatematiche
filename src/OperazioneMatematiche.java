@@ -26,6 +26,9 @@ public class OperazioneMatematiche {
         }else if(operazione.equals("%")){
             int risultato = modulo(a, b);
             System.out.println( a + " % " + b + " = " + risultato);
+        }else if(operazione.equals("%")){
+            int risultato = modulo(a, b);
+            System.out.println( a + " * " + b + " = " + risultato);
         }
 
         
@@ -43,6 +46,9 @@ public class OperazioneMatematiche {
 
     public static int modulo(int a, int b){
         return a % b;
+    }
+    public static int prodotto(int a, int b){
+        return a * b;
     }
     
 }
