@@ -27,8 +27,13 @@ public class OperazioneMatematiche {
             int risultato = modulo(a, b);
             System.out.println( a + " % " + b + " = " + risultato);
         }else if(operazione.equals("%")){
-            int risultato = modulo(a, b);
+            int risultato = prodotto(a, b);
             System.out.println( a + " * " + b + " = " + risultato);
+        }else if(operazione.equals("/")){
+            int risultato = quoziente(a, b);
+            System.out.println( a + " / " + b + " = " + risultato);
+        }else{
+            System.out.println("Operazione sconosciuta");
         }
 
         
@@ -49,6 +54,9 @@ public class OperazioneMatematiche {
     }
     public static int prodotto(int a, int b){
         return a * b;
+    }
+    public static int quoziente(int a, int b){
+        return a / b;
     }
     
 }
