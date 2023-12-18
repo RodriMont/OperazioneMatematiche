@@ -11,7 +11,7 @@ public class OperazioneMatematiche {
 
         int risultato = somma(a, b);
 
-        System.out.println("La somma è " + risultato);
+        System.out.println( a + " + " + b + " = " + risultato);
         scanner.close();
     }
 
